@@ -98,6 +98,8 @@ public class MySimpleUrlAuthenticationSuccessHandler implements AuthenticationSu
                 isUser = true;
             }
         }
+
+
         if (isUser) {
         	 String username;
              if (authentication.getPrincipal() instanceof User) {

@@ -55,6 +55,7 @@ public class SetupDataLoader implements ApplicationListener<ContextRefreshedEven
         final List<Privilege> userPrivileges = new ArrayList<>(Arrays.asList(readPrivilege, passwordPrivilege));
         final List<Privilege> managerPrivileges = new ArrayList<>(Arrays.asList(readPrivilege, passwordPrivilege, writePrivilege,manageUserPrivilege));
 
+
         final Role adminRole = createRoleIfNotFound("ROLE_ADMIN", adminPrivileges);
         createRoleIfNotFound("ROLE_USER", userPrivileges);
         final Role managerRole = createRoleIfNotFound(" MANAGER_ROLE", managerPrivileges);
